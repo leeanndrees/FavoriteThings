@@ -9,6 +9,7 @@
 import UIKit
 
 class FavoriteThingsViewController: UITableViewController {
+    let favoriteThingsItems = ["Lu", "Eastern Market", "Baked goods", "Sleeping", "Matt"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,7 @@ class FavoriteThingsViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 5
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
