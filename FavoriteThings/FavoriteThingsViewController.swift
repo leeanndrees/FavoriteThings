@@ -9,7 +9,7 @@
 import UIKit
 
 class FavoriteThingsViewController: UITableViewController {
-    let favoriteThingsItems = ["Lu", "Eastern Market", "Baked goods", "Sleeping", "Matt"]
+    var favoriteThingsItems = ["Lu", "Baked goods", "Sleeping", "Matt", "Chase"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class FavoriteThingsViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return favoriteThingsItems.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -31,6 +31,13 @@ class FavoriteThingsViewController: UITableViewController {
         cell.textLabel?.text = favoriteThingsItems[indexPath.row]
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+         self.favoriteThingsItems.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
 
 }
