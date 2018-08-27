@@ -12,8 +12,6 @@
 		4337AAFE2134936B00BB5032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4337AAFC2134936B00BB5032 /* Main.storyboard */; };
 		4337AB002134936B00BB5032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4337AAFF2134936B00BB5032 /* Assets.xcassets */; };
 		4337AB032134936B00BB5032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4337AB012134936B00BB5032 /* LaunchScreen.storyboard */; };
-		4337AB0E2134936C00BB5032 /* FavoriteThingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337AB0D2134936C00BB5032 /* FavoriteThingsTests.swift */; };
-		4337AB192134936C00BB5032 /* FavoriteThingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4337AB182134936C00BB5032 /* FavoriteThingsUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +40,7 @@
 		4337AB022134936B00BB5032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4337AB042134936B00BB5032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4337AB092134936C00BB5032 /* FavoriteThingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavoriteThingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4337AB0D2134936C00BB5032 /* FavoriteThingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteThingsTests.swift; sourceTree = "<group>"; };
-		4337AB0F2134936C00BB5032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4337AB142134936C00BB5032 /* FavoriteThingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavoriteThingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4337AB182134936C00BB5032 /* FavoriteThingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteThingsUITests.swift; sourceTree = "<group>"; };
-		4337AB1A2134936C00BB5032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				4337AAF72134936B00BB5032 /* FavoriteThings */,
-				4337AB0C2134936C00BB5032 /* FavoriteThingsTests */,
-				4337AB172134936C00BB5032 /* FavoriteThingsUITests */,
 				4337AAF62134936B00BB5032 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,24 +97,6 @@
 				4337AB042134936B00BB5032 /* Info.plist */,
 			);
 			path = FavoriteThings;
-			sourceTree = "<group>";
-		};
-		4337AB0C2134936C00BB5032 /* FavoriteThingsTests */ = {
-			isa = PBXGroup;
-			children = (
-				4337AB0D2134936C00BB5032 /* FavoriteThingsTests.swift */,
-				4337AB0F2134936C00BB5032 /* Info.plist */,
-			);
-			path = FavoriteThingsTests;
-			sourceTree = "<group>";
-		};
-		4337AB172134936C00BB5032 /* FavoriteThingsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4337AB182134936C00BB5032 /* FavoriteThingsUITests.swift */,
-				4337AB1A2134936C00BB5032 /* Info.plist */,
-			);
-			path = FavoriteThingsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4337AB0E2134936C00BB5032 /* FavoriteThingsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4337AB192134936C00BB5032 /* FavoriteThingsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
